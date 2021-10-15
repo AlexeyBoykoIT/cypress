@@ -245,6 +245,23 @@ ul, ol {
     padding: 60px 0;
 }
 
+.section--map {
+    background: url("../images/map.svg") no-repeat left 30px top 130px;
+}
+
+.section__title {
+    margin-bottom: 40px;
+    font-family: 'Lato', sans-serif;
+    font-size: 45px;
+    line-height: 1.2;
+    font-weight: 900;
+    color: #2C2C2C;
+}
+
+.section__title span {
+    color: #0D53F2;
+}
+
 .services {
     position: relative;
 
@@ -330,4 +347,30 @@ ul, ol {
     width: 100%;
 
     background-color: #FF3E2F;
+}
+
+
+/* Clients */
+
+.clients {
+    display: flex;
+}
+
+.clients__logos {
+    width: 60%;
+}
+
+.clients__reviews {
+    width: 40%;
+}
+
+.clients__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.clients__list li {
+    margin-right: 40px;
+    margin-bottom: 40px;
 }
