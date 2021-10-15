@@ -391,3 +391,50 @@ ul, ol {
     color: #464646;
     font-weight: 400;
 }
+
+/* Reviews */
+
+.reviews__header {
+    position: relative;
+    padding-left: 121px;
+    padding-top: 10px;
+    min-height: 100px;
+    margin-bottom: 30px;
+
+    font-family: 'Lato', sans-serif;
+}
+
+.reviews__photo {
+    width: 100px;
+    height: 100px;
+
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 3px 6 px rgba(0, 0, 0, .16);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.reviews__name {
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 900;
+    color: #2C2C2C;
+}
+
+.reviews__company {
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #2C2C2C;
+}
+
+.reviews__content {
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #585858;
+}
