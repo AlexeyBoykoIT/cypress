@@ -26,6 +26,11 @@ ul, ol {
     list-style: none;
 }
 
+.img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 
 /* Container */
 .container {
@@ -380,7 +385,7 @@ ul, ol {
 .clients-love {
     display: inline-block;
     min-height: 47px;
-    background: url("../images/heart.svg") no-repeat left 20px top;
+    background: url("../images/heart.svg") no-repeat left 19px top;
 
     margin-left: 40px;
     padding-top: 5px;
@@ -394,13 +399,34 @@ ul, ol {
 
 /* Reviews */
 
-.reviews__header {
+.reviews {
     position: relative;
-    padding-left: 121px;
-    padding-top: 10px;
-    min-height: 100px;
-    margin-bottom: 30px;
+}
 
+.reviews::before {
+    content: "";
+    display: block;
+    width: 92px;
+    height: 126px;
+
+    background: url("../images/lines.svg") no-repeat;
+    position: absolute;
+    top: -15px;
+    left: 2px;
+    z-index: 1;
+}
+
+.reviews__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+.reviews__header--content {
+    padding-left: 20px;
+    flex-grow: 1;
     font-family: 'Lato', sans-serif;
 }
 
@@ -411,11 +437,6 @@ ul, ol {
     border-radius: 50%;
     border: 5px solid #fff;
     box-shadow: 0 3px 6 px rgba(0, 0, 0, .16);
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
 }
 
 .reviews__name {
@@ -437,4 +458,19 @@ ul, ol {
     line-height: 1.8;
     font-weight: 400;
     color: #585858;
+}
+
+.reviews__content p {
+    margin-bottom: 20px;
+    text-indent: 20px;
+}
+
+/* Benefits */
+
+.benefits {
+    display: flex;
+}
+
+.benefits__col {
+    width: 50%;
 }
