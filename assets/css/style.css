@@ -663,3 +663,43 @@ ul, ol {
     line-height: 1.2;
     color: #585858;
 }
+
+/* News */
+
+.news-conent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.news-title {
+    margin-bottom: 50px;
+
+    font-family: 'Lato', sans-serif;
+    font-size: 45px;
+    line-height: 1;
+    font-weight: 900;
+    color: #2C2C2C;
+}
+
+.news-title span {
+    color: #004AF2;
+}
+
+.news-item {
+    max-width: 500px;
+    margin-bottom: 50px;
+}
+
+.news__title {
+    margin-bottom: 15px;
+
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 700;
+    color: #2C2C2C;
+}
+
+.news__text {
+    margin-bottom: 15px;
+}
