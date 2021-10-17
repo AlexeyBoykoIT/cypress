@@ -831,3 +831,21 @@ ul, ol {
 
     background-color: #fff;
 }
+
+.modal__header {
+    text-align: center;
+}
+
+.modal__title {
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 1.2;
+    color: #004AF2;
+}
+
+.modal__text {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 15px;
+    color: #2C2C2C;
+}
