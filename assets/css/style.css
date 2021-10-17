@@ -228,6 +228,18 @@ ul, ol {
     border-bottom-color: #000;
 }
 
+.input--dark.input--user {
+    background-image: url("../images/_ionicons_svg_ios-person.svg");
+}
+
+.input--dark.input--phone {
+    background-image: url("../images/_ionicons_svg_ios-call.svg");
+}
+
+.input--dark.input--email {
+    background-image: url("../images/_ionicons_svg_ios-mail.svg");
+}
+
 /* Btn */
 
 .btn {
