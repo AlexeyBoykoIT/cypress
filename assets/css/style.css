@@ -215,6 +215,18 @@ ul, ol {
     background: url(../images/mail-item.svg) left 15px top 6px no-repeat;
 }
 
+.input--dark {
+    color: #2C2C2C;
+    border-bottom-color: #E8E8E8;
+}
+
+.input--dark::placeholder {
+    color: #2C2C2C;
+}
+
+.input--dark:focus {
+    border-bottom-color: #000;
+}
 
 /* Btn */
 
@@ -833,10 +845,14 @@ ul, ol {
 }
 
 .modal__header {
+    margin-bottom: 25px;
+
     text-align: center;
 }
 
 .modal__title {
+    margin-bottom: 10px;
+
     font-family: 'Lato', sans-serif;
     font-size: 24px;
     font-weight: 900;
