@@ -44,6 +44,11 @@ ul, ol {
     padding: 0 15px;
 }
 
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
 /* Haeder */
 
@@ -109,7 +114,7 @@ ul, ol {
     background-size: cover;
 }
 
-.intro--privacy {
+.intro--text {
     height: 350px;
     background: #000 url(../images/privacy-bg.jpg) no-repeat center;
     background-size: cover;
@@ -362,6 +367,10 @@ ul, ol {
 
 .section__title span {
     color: #0D53F2;
+}
+
+.section--last {
+    margin-bottom: 60px;
 }
 
 .services {
@@ -811,7 +820,7 @@ ul, ol {
 
 .footer {
     padding: 40px 0;
-    margin-top: 60px;
+    margin-top: auto;
     text-align: center;
 
     background-color: #F9F9F9;
@@ -997,44 +1006,63 @@ ul, ol {
 
 /* Privacy */
 
-.privacy {
-    margin-bottom: 50px;
-
-    width: 100%;
+.text {
     max-width: 890px;
-}
-
-.privacy__text {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 
     font-size: 18px;
     color: #585858;
     line-height: 1.5;
 }
 
-.privacy__subtitle {
-    margin-bottom: 30px;
+.text p {
+    margin-bottom: 20px;
+}
 
-    font-size: 24px;
+.text h2,
+.text h3,
+.text h4,
+.text h5,
+.text h6 {
+    margin-bottom: 20px;
+
     font-weight: 700;
     color: #2C2C2C;
     line-height: 1.2;
 }
 
-.privacy__list {
-    margin-bottom: 30px;
-
-    font-size: 18px;
-    color: #585858;
-    line-height: 1.5;
+.text h2 {
+    font-size: 27px;
 }
 
-.privacy__list--unordered li:before {
+.text h3 {
+    font-size: 24px;
+}
+
+.text h4 {
+    font-size: 21px;
+}
+
+.text h5 {
+    font-size: 18px;
+}
+
+.text h6 {
+    font-size: 15px;
+}
+
+.text ul, ol {
+    margin-bottom: 20px;
+}
+
+.text ol {
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+
+/*  .privacy__list--unordered li:before {
     content:  "-";
     position: relative;
     left:     -5px;
 }
-
-.privacy__list--ordered {
-    list-style-type: decimal;
-}
+*/
