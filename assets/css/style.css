@@ -109,6 +109,12 @@ ul, ol {
     background-size: cover;
 }
 
+.intro--privacy {
+    height: 350px;
+    background: #000 url(../images/privacy-bg.jpg) no-repeat center;
+    background-size: cover;
+}
+
 .intro__inner {
     height: 600px;
     display: flex;
@@ -986,4 +992,49 @@ ul, ol {
 
 .main__col {
     width: 50%;
+}
+
+
+/* Privacy */
+
+.privacy {
+    margin-bottom: 50px;
+
+    width: 100%;
+    max-width: 890px;
+}
+
+.privacy__text {
+    margin-bottom: 30px;
+
+    font-size: 18px;
+    color: #585858;
+    line-height: 1.5;
+}
+
+.privacy__subtitle {
+    margin-bottom: 30px;
+
+    font-size: 24px;
+    font-weight: 700;
+    color: #2C2C2C;
+    line-height: 1.2;
+}
+
+.privacy__list {
+    margin-bottom: 30px;
+
+    font-size: 18px;
+    color: #585858;
+    line-height: 1.5;
+}
+
+.privacy__list--unordered li:before {
+    content:  "-";
+    position: relative;
+    left:     -5px;
+}
+
+.privacy__list--ordered {
+    list-style-type: decimal;
 }
