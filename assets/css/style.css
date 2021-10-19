@@ -1090,6 +1090,14 @@ ul, ol {
             width: 50%;
         }
 
+        .clients {
+            flex-direction: column;
+        }
+
+        .clients__logos,
+        .clients__reviews {
+            width: 100%;
+        }
     }
 
     @media (max-width: 767px) {
