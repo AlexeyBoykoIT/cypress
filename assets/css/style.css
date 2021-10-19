@@ -1213,6 +1213,24 @@ ul, ol {
             margin-bottom: 30px;
             max-width: none;
         }
+
+        /* Team */
+        .team {
+            flex-direction: column;
+        }
+
+        .team__col {
+            width: 100%;
+        }
+
+        .team__col:last-child {
+            margin-bottom: 0;
+        }
+
+        .team__item {
+            max-width: 370px;
+            margin: 0 auto;
+        }
     }
 
 
