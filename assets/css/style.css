@@ -1084,8 +1084,16 @@ ul, ol {
 /* Media Queries */
 
 @media (max-width: 991px) {
+        /* Section */
+        .section__title {
+            text-align: center;
+        }
 
-    /* Services */
+        .section--map {
+            background-position: center top 130px;
+        }
+
+        /* Services */
         .services__item {
             width: 50%;
         }
