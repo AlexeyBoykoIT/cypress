@@ -1090,6 +1090,7 @@ ul, ol {
             width: 50%;
         }
 
+        /* Clients */
         .clients {
             flex-direction: column;
         }
@@ -1097,6 +1098,10 @@ ul, ol {
         .clients__logos,
         .clients__reviews {
             width: 100%;
+        }
+
+        .clients__list li {
+            max-width: 130px;
         }
     }
 
@@ -1207,5 +1212,20 @@ ul, ol {
 
         .section__title {
             font-size: 35px;
+        }
+
+        .clients__list {
+            margin: 0 -15px;
+        }
+
+        .clients__list li {
+            max-width: none;
+            width: 33.33333%;
+            margin-right: 0;
+            padding: 0 15px;
+        }
+
+        .clients__list li img {
+            margin: 0 auto;
         }
     }
