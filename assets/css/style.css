@@ -1093,6 +1093,7 @@ ul, ol {
         /* Clients */
         .clients {
             flex-direction: column;
+            margin-bottom: 30px;
         }
 
         .clients__logos,
@@ -1100,6 +1101,13 @@ ul, ol {
             width: 100%;
         }
 
+        .clients__logos {
+            margin-bottom: 50px;
+        }
+
+        .clients__list {
+            justify-content: center;
+        }
         .clients__list li {
             max-width: 130px;
         }
@@ -1215,6 +1223,7 @@ ul, ol {
         }
 
         .clients__list {
+            justify-content: center;
             margin: 0 -15px;
         }
 
@@ -1225,7 +1234,7 @@ ul, ol {
             padding: 0 15px;
         }
 
-        .clients__list li img {
+        .clients__list--logo {
             margin: 0 auto;
         }
     }
