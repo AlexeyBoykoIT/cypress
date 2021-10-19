@@ -1197,6 +1197,22 @@ ul, ol {
 
             order: 2;
         }
+
+        /* Benefits */
+        .benefits {
+            flex-direction: column;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .benefits__col {
+            width: 100%;
+        }
+
+        .benefits-list {
+            margin-bottom: 30px;
+            max-width: none;
+        }
     }
 
 
