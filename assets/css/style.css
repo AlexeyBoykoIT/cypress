@@ -1231,6 +1231,24 @@ ul, ol {
             max-width: 370px;
             margin: 0 auto;
         }
+
+        /* Mission */
+        .mission-title {
+            font-size: 70px;
+        }
+
+        .mission {
+            padding: 40px 20px;
+            margin-top: -16px;
+        }
+
+        .mission__title {
+            font-size: 24px;
+        }
+
+        .mission__subtitle {
+            font-size: 18px;
+        }
     }
 
 
@@ -1278,5 +1296,23 @@ ul, ol {
 
         .clients__list--logo {
             margin: 0 auto;
+        }
+
+        /* Mission */
+        .mission-title {
+            font-size: 40px;
+        }
+
+        .mission {
+            padding: 30px 20px;
+            margin-top: -10px;
+        }
+
+        .mission__title {
+            font-size: 20px;
+        }
+
+        .mission__subtitle {
+            font-size: 16px;
         }
     }
