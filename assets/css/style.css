@@ -1084,6 +1084,18 @@ ul, ol {
 /* Media Queries */
 
 @media (max-width: 991px) {
+        /* Intro */
+        .intro__title {
+            font-size: 90px;
+        }
+
+        .intro__title-amp {
+            font-size: 120px;
+            right: auto;
+            left: 50%;
+            transform: translate3d(-50%, -50%, 0);
+        }
+
         /* Section */
         .section__title {
             text-align: center;
@@ -1187,15 +1199,13 @@ ul, ol {
             text-align: center;
         }
 
-        .intro__title {
-            font-size: 90px;
+         /* Intro */
+         .intro__title {
+            font-size: 70px;
         }
 
         .intro__title-amp {
-            font-size: 120px;
-            right: auto;
-            left: 50%;
-            transform: translate3d(-50%, -50%, 0);
+            font-size: 100px;
         }
 
         .request-form--intro {
