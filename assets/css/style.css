@@ -1293,8 +1293,20 @@ ul, ol {
         }
 
         /* Services */
+        .services {
+            padding-top: 50px;
+            padding-bottom: 10px;
+        }
+
         .services__main--title {
+            width: 100%;
+
             font-size: 60px;
+            text-align: center;
+
+            bottom: auto;
+            right: auto;
+            top: 10px;
         }
 
         .services__item {
