@@ -778,9 +778,8 @@ ul, ol {
 
 .articles {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin: 0 -15px 30px;
 }
 
 .articles--colum {
@@ -797,6 +796,7 @@ ul, ol {
     width: 100%;
     max-width: 500px;
     margin-bottom: 20px;
+    padding: 0 15px;
 }
 
 .articles__title {
@@ -1119,6 +1119,9 @@ ul, ol {
         .clients__list li {
             max-width: 130px;
         }
+
+        /* Footer */
+
     }
 
     @media (max-width: 767px) {
@@ -1249,8 +1252,16 @@ ul, ol {
         .mission__subtitle {
             font-size: 18px;
         }
-    }
 
+        /* Articles */
+        .articles {
+            flex-wrap: wrap;
+        }
+
+        .articles__item {
+            max-width: none;
+        }
+    }
 
 
     @media (max-width: 575px) {
@@ -1282,6 +1293,11 @@ ul, ol {
             font-size: 35px;
         }
 
+        .section--last {
+            margin-bottom: 30px;
+        }
+
+        /* Clients */
         .clients__list {
             justify-content: center;
             margin: 0 -15px;
