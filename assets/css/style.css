@@ -1316,6 +1316,16 @@ ul, ol {
             margin-bottom: 30px;
         }
 
+        /* Request form */
+        .request-form__header,
+        .request-form__content {
+            padding: 20px;
+        }
+
+        .request-form__title {
+            font-size: 25px;
+        }
+
         /* Clients */
         .clients__list {
             justify-content: center;
@@ -1354,5 +1364,15 @@ ul, ol {
         /* Footer */
         .footer {
             background-position: left -120px bottom -80px, right -120px bottom -80px;
+        }
+    }
+
+    @media (max-width: 320px) {
+        .intro__title {
+            font-size: 40px;
+        }
+
+        .intro__title-amp {
+            font-size: 50px;
         }
     }
