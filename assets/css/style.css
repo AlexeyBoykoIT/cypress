@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'PT Sans', sans-serif;
-    font-size: 15px;
+    font-size: 16px;
     color: #585858;
     line-height: 1.4;
 
@@ -79,7 +79,7 @@ ul, ol {
 .nav {
     display: flex;
     height: 100%;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .nav__link {
@@ -145,7 +145,7 @@ ul, ol {
 }
 
 .intro__countries {
-    font-size: 15px;
+    font-size: 16px;
     color: #fff;
 }
 
@@ -200,7 +200,7 @@ ul, ol {
 }
 
 .request-form__text {
-    font-size: 15px;
+    font-size: 16px;
     color: #fff;
 }
 
@@ -431,7 +431,7 @@ ul, ol {
 
 .services__text {
     font-family: 'PT Sans', sans-serif;
-    font-size: 15px;
+    font-size: 16px;
     color: #585858;
     font-weight: 400;
 }
@@ -442,7 +442,7 @@ ul, ol {
 
 .services__link {
     display: inline-block;
-    font-size: 15px;
+    font-size: 16px;
     color: #004AF2;
     text-decoration: none;
 }
@@ -564,14 +564,14 @@ ul, ol {
 }
 
 .reviews__company {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.2;
     font-weight: 400;
     color: #2C2C2C;
 }
 
 .reviews__content {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.8;
     font-weight: 400;
     color: #585858;
@@ -644,7 +644,7 @@ ul, ol {
 
 .benefits-list__text {
     font-family: 'PT Sans', sans-serif;
-    font-size: 15px;
+    font-size: 16px;
     color: #464646;
 }
 
@@ -682,7 +682,7 @@ ul, ol {
 .team__prof {
     margin-bottom: 11px;
 
-    font-size: 15px;
+    font-size: 16px;
     color: #585858;
 }
 
@@ -940,7 +940,7 @@ ul, ol {
 
 .modal__text {
     font-family: 'PT Sans', sans-serif;
-    font-size: 15px;
+    font-size: 16px;
     color: #2C2C2C;
 }
 
@@ -963,7 +963,7 @@ ul, ol {
 
 .modal__contacts {
     font-family: 'PT Sans', sans-serif;
-    font-size: 15px;
+    font-size: 16px;
     color: #2C2C2C;
     font-style: normal;
 }
@@ -1060,7 +1060,7 @@ ul, ol {
 }
 
 .text h6 {
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .text ul, ol {
