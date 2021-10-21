@@ -8,6 +8,10 @@ body {
     background-color: #fff;
 }
 
+/* body.no-scroll {
+    overflow: hidden;
+}*/
+
 * {
     box-sizing: border-box;
 }
@@ -801,7 +805,7 @@ ul, ol {
 
 .articles__title {
     margin-bottom: 15px;
-    font-size: 18px;
+    font-size: 24px;
     line-height: 1;
     font-weight: 700;
     color: #2C2C2C;
@@ -891,8 +895,8 @@ ul, ol {
 /* Modal */
 
 .modal {
-    /*  display: none;*/
-    display: block;
+    display: none;
+
 
     width: 100%;
     height: 100%;
@@ -1146,6 +1150,16 @@ ul, ol {
             background-size: 330px auto;
             background-position: left -30px bottom -30px, right -30px bottom -30px;
         }
+
+        /* Main */
+
+        .main {
+            flex-direction: column;
+        }
+
+        .main__col {
+            width: 100%;
+        }
     }
 
     @media (max-width: 767px) {
@@ -1388,11 +1402,6 @@ ul, ol {
         }
 
         /* Modal */
-
-        .modal__inner {
-            padding: 15px;
-        }
-
         .modal__close {
             right: 0;
             top: -30px;
