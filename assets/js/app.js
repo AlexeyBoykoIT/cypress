@@ -1,16 +1,53 @@
-let intro = $("#intro");
-let header = $("#header");
-let introH = intro.innerHeight();
-let scrollTop = $(this).scrollTop();
+$(function() {
+    let intro = $("#intro");
+    let header = $("#header");
+    let introH = intro.innerHeight();
+    let headerH = header.innerHeight();
 
-$(window).on("scroll", function() {
 
-    let scrollTop = $(this).scrollTop();
+    /* Header class on scroll */
 
-    if( scrollTop >= introH) {
-        header.addClass("header--dark");
-    } else {
-        header.removeClass("header--dark");
+
+    headerScroll();
+
+    $(window).on("scroll resize", function() {
+        headerScroll();
+    });
+
+    function headerScroll() {
+        introH = intro.innerHeight();
+        headerH = header.innerHeight();
+
+        let scrollTop = $(this).scrollTop();
+
+        if( scrollTop >= (introH - headerH) ) {
+            header.addClass("header--dark");
+        } else {
+            header.removeClass("header--dark");
+        }
     }
 
+    /* Smooth Scroll to section */
+
+    $("[data-scroll]").on("click", function(event) {
+        event.preventDefault();
+
+        let scrollEl = $(this).data("scroll");
+        let scrollElPos = $(scrollEl).offset().top;
+
+        console.log(scrollElPos);
+    });
+
+
+
+
+
+
+
+
+
+
 });
+
+
+
