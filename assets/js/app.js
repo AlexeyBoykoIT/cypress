@@ -29,20 +29,17 @@ $(function() {
 
     /* Smooth Scroll to section */
 
+
     $("[data-scroll]").on("click", function(event) {
         event.preventDefault();
 
         let scrollEl = $(this).data("scroll");
         let scrollElPos = $(scrollEl).offset().top;
 
-        console.log(scrollElPos);
+        $("html, body").animate({
+            scrollTop: scrollElPos - headerH
+        }, 500)
     });
-
-
-
-
-
-
 
 
 
