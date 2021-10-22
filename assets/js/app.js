@@ -42,9 +42,27 @@ $(function() {
     });
 
 
+    /* ScrollSpy */
 
+    let windowH = $(window).height();
 
+    $(window).on("scroll", function() {
+        let scrollTop = $(this).scrollTop();
+
+        $("[data-scrollspy]").each(function() {
+
+        let $this = $(this);
+        let sectionID = $this.data("scrollspy");
+        let sectionOffset = $this.offset().top;
+        sectionOffset = sectionOffset - (windowH / 2);
+
+        if(scrollTop >= sectionOffset) {
+            $('#nav [data-scroll').removeClass("active");
+
+            $('#nav [data-scroll="' + sectionID + '"]').addClass("active");
+        }
+    });
 });
 
 
-
+});
