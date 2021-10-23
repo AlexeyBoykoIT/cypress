@@ -121,9 +121,28 @@ ul, ol {
 
 .intro {
     margin-bottom: 30px;
+    position: relative;
+    /* background: #000 url(../images/intro-bg.jpg) no-repeat center;
+    background-size: cover; */
+}
 
-    background: #000 url(../images/intro-bg.jpg) no-repeat center;
-    background-size: cover;
+.intro__slider {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.intro__slider-photo {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .intro--blog {
@@ -143,6 +162,8 @@ ul, ol {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+    position: relative;
+    z-index: 2;
 }
 
 .intro__text {
@@ -176,6 +197,7 @@ ul, ol {
 
     transform: translateY(-50%);
 }
+
 
 /* Request form */
 .request-form {

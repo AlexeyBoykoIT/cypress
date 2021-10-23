@@ -129,5 +129,16 @@ $(function() {
 
 
 
+    /* Slick slider https://kenwheeler.github.io/slick/*/
+
+
+    $('#introSlider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false
+      });
+
+
 
 });
