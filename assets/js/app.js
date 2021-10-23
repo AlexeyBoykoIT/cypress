@@ -171,9 +171,9 @@ $(function() {
         slidesToScroll: 1,
         arrows: false,
         fade: true,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 4000,
-        speed: 500
+        speed: 1000
     });
 
 

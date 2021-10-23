@@ -1372,6 +1372,10 @@ body.show-nav .header {
             max-width: 130px;
         }
 
+        .intro__slider-arrows {
+            display: none;
+        }
+
         /* Footer */
         .footer {
             background-size: 330px auto;
@@ -1394,8 +1398,8 @@ body.show-nav .header {
             padding-top: 9px;
             flex-direction: column;
             width: 100%;
-            height: auto;
-            min-height: calc(100vh - 50px);
+            height: calc(100vh - 50px);
+            overflow: auto;
 
             background-color: rgba(0, 0, 0, .85);
 
@@ -1452,10 +1456,6 @@ body.show-nav .header {
 
         .intro__title-amp {
             font-size: 100px;
-        }
-
-        .intro__slider-arrows {
-            display: none;
         }
 
         .request-form--intro {
