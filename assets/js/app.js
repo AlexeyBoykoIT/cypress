@@ -136,7 +136,11 @@ $(function() {
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: false
+        arrows: false,
+        fade: true,
+        autoplay: true,
+        autoplaySpeed: 4000
+
       });
 
 
