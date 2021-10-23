@@ -1,5 +1,28 @@
 $(function() {
 
+
+    /* Nav Toggle on mobile
+    ======================================*/
+
+    let navToggle = $('#navToggle');
+    let nav = $('#nav');
+
+    navToggle.on('click', function(event) {
+        event.preventDefault();
+
+        $("body").toggleClass('show-nav');
+        $(this).toggleClass('active');
+        nav.toggleClass('show');
+    });
+
+    $(window).on("resize", function() {
+        $("body").removeClass('show-nav');
+        navToggle.removeClass('active');
+        nav.removeClass('show');
+    });
+
+
+
     let intro = $("#intro");
     let header = $("#header");
     let introH = intro.innerHeight();
@@ -39,6 +62,10 @@ $(function() {
 
         let scrollEl = $(this).data("scroll");
         let scrollElPos = $(scrollEl).offset().top;
+
+        $("body").removeClass('show-nav');
+        navToggle.removeClass('active');
+        nav.removeClass('show');
 
         $("html, body").animate({
             scrollTop: scrollElPos - headerH
@@ -129,9 +156,14 @@ $(function() {
 
 
 
-    /* Slick slider https://kenwheeler.github.io/slick/*/
 
-     let introSlider = $('#introSlider');
+    /* Slick slider
+       https://kenwheeler.github.io/slick/
+    ===================================*/
+
+
+    /* Intro Slider */
+    let introSlider = $("#introSlider");
 
     introSlider.slick({
         infinite: true,
@@ -139,33 +171,35 @@ $(function() {
         slidesToScroll: 1,
         arrows: false,
         fade: true,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 4000,
-        speed: 1500
+        speed: 500
+    });
 
-      });
 
-
-      $('#introSliderPrev').on('click', function() {
+    $('#introSliderPrev').on('click', function() {
         introSlider.slick('slickPrev')
-      });
+    });
 
-      $('#introSliderNext').on('click', function() {
+    $('#introSliderNext').on('click', function() {
         introSlider.slick('slickNext')
-      });
+    });
 
 
-/* Reviews slider */
-      let reviewsSlider = $('#reviewsSlider');
 
-      reviewsSlider.slick({
+    /* Reviews Slider */
+    let reviewsSlider = $("#reviewsSlider");
+
+    reviewsSlider.slick({
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
         dots: true,
         speed: 500
+    });
 
-      });
+
+
 
 });
