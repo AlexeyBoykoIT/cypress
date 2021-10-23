@@ -131,16 +131,27 @@ $(function() {
 
     /* Slick slider https://kenwheeler.github.io/slick/*/
 
+     let introSlider = $('#introSlider');
 
-    $('#introSlider').slick({
+    introSlider.slick({
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
         fade: true,
         autoplay: true,
-        autoplaySpeed: 4000
+        autoplaySpeed: 4000,
+        speed: 1500
 
+      });
+
+
+      $('#introSliderPrev').on('click', function() {
+        introSlider.slick('slickPrev')
+      });
+
+      $('#introSliderNext').on('click', function() {
+        introSlider.slick('slickNext')
       });
 
 

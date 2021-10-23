@@ -122,8 +122,7 @@ ul, ol {
 .intro {
     margin-bottom: 30px;
     position: relative;
-    /* background: #000 url(../images/intro-bg.jpg) no-repeat center;
-    background-size: cover; */
+    background: #000;
 }
 
 .intro__slider {
@@ -157,6 +156,37 @@ ul, ol {
     height: 100%;
     object-fit: cover;
     object-position: center;
+}
+
+.intro__slider-arrows {
+    position: absolute;
+    bottom: 30px;
+    left: 430px;
+}
+
+.intro__slider-btn {
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0 4px;
+
+    font-size: 0;
+    color: transparent;
+    cursor: pointer;
+
+    background: none;
+}
+
+.intro__slider-btn-prev {
+    border-style: solid;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #fff transparent transparent;
+}
+
+.intro__slider-btn-next {
+    border-style: solid;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #fff;
 }
 
 .intro--blog {
